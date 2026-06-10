@@ -1,0 +1,1 @@
+# -kokoro-omamori-support
