@@ -15,6 +15,8 @@
       --text-sub: #746f69;
       --accent: #b98f7a;
       --accent-soft: #f1ddd2;
+      --warning-bg: rgba(255, 247, 238, 0.78);
+      --warning-border: rgba(185, 143, 122, 0.28);
       --shadow: rgba(116, 96, 86, 0.14);
     }
 
@@ -134,15 +136,23 @@
       margin: 4px 0;
     }
 
+    .note,
+    .important {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      color: var(--text-sub);
+      font-size: 14px;
+    }
+
     .note {
-  margin-top: 14px;
-  padding: 14px 16px;
-  border-radius: 18px;
-  background: rgba(255, 248, 244, 0.75);
-  border: 1px solid rgba(185, 143, 122, 0.28);
-  color: var(--text-sub);
-  font-size: 14px;
-}
+      background: rgba(255, 255, 255, 0.52);
+    }
+
+    .important {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+    }
 
     .updated {
       margin-top: 24px;
@@ -156,6 +166,16 @@
       color: var(--text-sub);
       font-size: 13px;
       margin: 22px 0 4px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -175,18 +195,9 @@
         font-size: 17px;
       }
     }
-         a {
-      color: var(--accent);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }   
   </style>
 </head>
-  
+
 <body>
   <main class="page">
     <header class="hero">
@@ -217,6 +228,9 @@
         <p>
           The App is not designed to request information that directly identifies an individual, such as name, address, phone number, or email address.
         </p>
+        <p>
+          However, if the user enters personal information in notes or other fields, that information will be stored as part of the App’s record data on the user’s device.
+        </p>
       </section>
 
       <section>
@@ -225,7 +239,7 @@
           The information stored in the App is used to allow users to record and review their anxiety, feelings, symptoms, triggers, notes, Omamori card, and notification settings.
         </p>
         <p>
-          The records in the App are intended for personal self-care and reflection only. They are not intended for medical diagnosis, treatment, or professional advice.
+          The records in the App are intended for personal self-care and reflection only. They are not intended for medical diagnosis, treatment, prevention, or professional advice.
         </p>
       </section>
 
@@ -235,19 +249,56 @@
           Information entered or set in the App is stored on the user’s device.
         </p>
         <p>
-          The developer does not transmit, collect, or store the user’s record data on an external server.
+          The developer does not transmit, collect, or store the user’s anxiety level, symptoms, triggers, notes, Omamori card image, custom messages, or other record data on an external server.
         </p>
       </section>
 
       <section>
-        <h2><span>4</span>Sharing with Third Parties</h2>
+        <h2><span>4</span>Advertising</h2>
         <p>
-          The developer does not provide information entered or set by users in the App to third parties, except where required by law.
+          The App may use third-party advertising services to display ads.
+        </p>
+        <p>
+          Advertising services may collect and use information such as advertising identifiers, device information, and app usage information for purposes including ad delivery, ad measurement, fraud prevention, and showing ads that may be more relevant to the user.
+        </p>
+        <p>
+          Such information is handled in accordance with the privacy policies of the advertising service providers.
+        </p>
+        <ul>
+          <li>Google AdMob</li>
+        </ul>
+        <p>
+          For more information about how Google handles information for advertising, please see the links below.<br>
+          <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Policies</a><br>
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
         </p>
       </section>
 
       <section>
-        <h2><span>5</span>Notifications</h2>
+        <h2><span>5</span>Managing Advertising Information</h2>
+        <p>
+          Users may be able to reset their advertising identifier or change settings related to personalized advertising from their device settings.
+        </p>
+        <p>
+          On iOS devices, users can review and change tracking and advertising-related settings from the privacy-related settings in the device’s Settings app.
+        </p>
+        <p>
+          Available settings and menu names may differ depending on the OS version and device status.
+        </p>
+      </section>
+
+      <section>
+        <h2><span>6</span>Sharing with Third Parties</h2>
+        <p>
+          The developer does not provide record data entered or set by users in the App to third parties, except where required by law.
+        </p>
+        <p>
+          However, if the App uses advertising services, the advertising service providers may collect and use information such as advertising identifiers, device information, and app usage information for ad delivery and measurement purposes.
+        </p>
+      </section>
+
+      <section>
+        <h2><span>7</span>Notifications</h2>
         <p>
           The App may send reminder notifications if the user chooses to enable them.
         </p>
@@ -257,7 +308,7 @@
       </section>
 
       <section>
-        <h2><span>6</span>Use of Images and Custom Messages</h2>
+        <h2><span>8</span>Use of Images and Custom Messages</h2>
         <p>
           The App allows users to set an image and a custom message for their Omamori card.
         </p>
@@ -267,7 +318,7 @@
       </section>
 
       <section>
-        <h2><span>7</span>Deleting Data</h2>
+        <h2><span>9</span>Deleting Data</h2>
         <p>
           Users can delete saved record data from the settings screen in the App.
         </p>
@@ -277,23 +328,39 @@
       </section>
 
       <section>
-        <h2><span>8</span>Disclaimer</h2>
+        <h2><span>10</span>Purpose and Limitations of the App</h2>
         <p>
-          The App is intended to support self-care and personal record keeping.
+          The App is intended as a record-keeping and support tool that helps users reflect on their feelings and anxiety as part of personal self-care.
         </p>
         <p>
-          The App does not provide diagnosis, treatment, medical advice, counseling, or any other professional service. If you have physical or mental health concerns, or if you are experiencing strong anxiety or distress, please consult a medical institution, counselor, or other qualified professional.
+          The App does not provide diagnosis, treatment, medical care, counseling, or professional advice by doctors, clinical psychologists, licensed psychologists, or other professionals.
         </p>
         <p>
-          The developer is not responsible for any damage or disadvantage arising from the use of the App, except in cases of intentional misconduct or gross negligence by the developer.
+          The content displayed in the App, record results, reflection content, breathing guide, Omamori card messages, and other features do not guarantee improvement in mental or physical condition, reduction of symptoms, or any specific result.
         </p>
-        <div class="note">
-          If you are in immediate danger or feel that you may harm yourself, do not rely on this App alone. Please contact someone close to you, a medical institution, an emergency service, or a local crisis support service immediately.
+        <div class="important">
+          If you have physical or mental health concerns, strong anxiety, worsening symptoms, thoughts of self-harm, suicidal thoughts, or any urgent condition, do not rely on this App alone. Please consult a medical institution, qualified professional, someone close to you, or an emergency support service.
         </div>
       </section>
 
       <section>
-        <h2><span>9</span>Changes to This Privacy Policy</h2>
+        <h2><span>11</span>Disclaimer</h2>
+        <p>
+          Users are responsible for using the App based on their own judgment and responsibility.
+        </p>
+        <p>
+          The developer does not guarantee the accuracy, completeness, usefulness, safety, or fitness for a particular purpose of the App’s content, functions, displays, record data, notifications, breathing guide, messages, advertisements, or any other information related to the App.
+        </p>
+        <p>
+          To the extent permitted by law, the developer is not responsible for any damage, disadvantage, trouble, changes in mental or physical condition, loss of data, device malfunction, or other issues arising from the use of, or inability to use, the App.
+        </p>
+        <p>
+          This does not apply in cases where the user suffers damage due to intentional misconduct or gross negligence by the developer.
+        </p>
+      </section>
+
+      <section>
+        <h2><span>12</span>Changes to This Privacy Policy</h2>
         <p>
           This Privacy Policy may be updated as necessary.
         </p>
@@ -303,16 +370,16 @@
       </section>
 
       <section>
-        <h2><span>10</span>Contact</h2>
+        <h2><span>13</span>Contact</h2>
         <p>
-         For inquiries about this app, please contact us at the email address below.<br>
-    <a href="mailto:answersheettomark@gmail.com">answersheettomark@gmail.com</a >
+          For inquiries about this App, please contact us at the email address below.<br>
+          <a href="mailto:answersheettomark@gmail.com">answersheettomark@gmail.com</a>
         </p>
       </section>
 
-      <p class="updated">Last updated: June 11, 2026</p>
+      <p class="updated">Last updated: June 15, 2026</p>
     </article>
-    
+
     <footer>
       © 2026 Kokoro Omamori
     </footer>
