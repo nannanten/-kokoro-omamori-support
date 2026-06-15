@@ -15,6 +15,8 @@
       --text-sub: #746f69;
       --accent: #b98f7a;
       --accent-soft: #f1ddd2;
+      --warning-bg: rgba(255, 247, 238, 0.78);
+      --warning-border: rgba(185, 143, 122, 0.28);
       --shadow: rgba(116, 96, 86, 0.14);
     }
 
@@ -134,13 +136,22 @@
       margin: 4px 0;
     }
 
-    .note {
+    .note,
+    .important {
       margin-top: 14px;
       padding: 14px 16px;
       border-radius: 18px;
-      background: rgba(255, 255, 255, 0.52);
       color: var(--text-sub);
       font-size: 14px;
+    }
+
+    .note {
+      background: rgba(255, 255, 255, 0.52);
+    }
+
+    .important {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
     }
 
     .updated {
@@ -155,6 +166,16 @@
       color: var(--text-sub);
       font-size: 13px;
       margin: 22px 0 4px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
@@ -173,15 +194,6 @@
       h2 {
         font-size: 17px;
       }
-    }
-        a {
-      color: var(--accent);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -207,62 +219,96 @@
         <p>
           The App also provides features such as a breathing guide and an Omamori card to support users in feeling calmer in daily life.
         </p>
+        <p>
+          The App is a tool intended to support users’ own records and reflection, and does not guarantee improvement in mental or physical condition, reduction of symptoms, or any specific result.
+        </p>
       </section>
 
       <section>
         <h2><span>2</span>Not Medical Care</h2>
         <p>
-          The App does not provide diagnosis, treatment, medical advice, counseling, or any other professional service by a physician, counselor, or other qualified professional.
+          The App does not provide diagnosis, treatment, medical care, counseling, or professional advice by doctors, clinical psychologists, licensed psychologists, or other qualified professionals.
         </p>
         <p>
-          Records, displays, messages, breathing guides, Omamori card content, and other information within the App are not a substitute for medical care or professional counseling.
+          Records, displays, messages, breathing guides, Omamori card content, and other information within the App are not a substitute for medical care, diagnosis, treatment, prevention, or professional counseling.
         </p>
         <p>
-          If you have physical or mental health concerns, strong anxiety, or worsening symptoms, please consult a medical institution, counselor, or other qualified professional.
+          If you have physical or mental health concerns, strong anxiety, worsening symptoms, or difficulties in daily life, please do not rely on the App alone and consult a medical institution or qualified professional.
         </p>
       </section>
 
       <section>
         <h2><span>3</span>Emergency Situations</h2>
         <p>
-          If you are experiencing severe distress, feel that you are in danger, feel that you may harm yourself, or face any situation involving immediate risk to life or safety, do not rely on this App alone.
+          If you are experiencing severe distress, feel that you are in danger, feel that you may harm yourself, have suicidal thoughts, or face any situation involving immediate risk to life or safety, do not rely on this App alone.
         </p>
         <p>
           In such cases, please promptly contact someone close to you, a medical institution, an emergency service, or a local crisis support service.
         </p>
-        <div class="note">
-          The App is not an emergency response or crisis intervention service.
+        <div class="important">
+          The App is not an emergency response, crisis intervention, emergency medical, or medical consultation service.
         </div>
       </section>
 
       <section>
         <h2><span>4</span>User Records</h2>
         <p>
-          This app stores the mood records you enter, including symptoms, triggers, notes, images set for your Omamori Card, and notification settings, on your device.
+          The App stores the mood records entered by the user, including symptoms, triggers, notes, images set for the Omamori card, and notification settings, on the user’s device.
         </p>
         <p>
-          Users are responsible for entering, managing, and deleting their own record data.
+          Users are responsible for entering, managing, and deleting their own record data based on their own judgment and responsibility.
         </p>
         <p>
-          Please do not enter or use information that infringes on another person’s personal information, rights, privacy, reputation, or any laws or regulations.
+          Please do not enter or use another person’s personal information, content that infringes on third-party rights, content that violates laws or regulations, or content that is contrary to public order and morals.
         </p>
       </section>
 
       <section>
-        <h2><span>5</span>Prohibited Acts</h2>
+        <h2><span>5</span>Precautions for Use</h2>
+        <p>
+          Users should not over-rely on the App’s content or record results, and should use the App within a reasonable range according to their own physical condition and circumstances.
+        </p>
+        <p>
+          If you feel discomfort, dizziness, shortness of breath, or any physical discomfort while using the breathing guide, please stop using it immediately and do not force yourself to continue.
+        </p>
+        <p>
+          Notifications, messages, record content, reflection content, and other information in the App are intended to support the user’s own judgment, and do not force or recommend any specific action.
+        </p>
+      </section>
+
+      <section>
+        <h2><span>6</span>Advertising</h2>
+        <p>
+          The App may display advertisements.
+        </p>
+        <p>
+          The developer does not guarantee the accuracy, safety, legality, or usefulness of advertisements, external websites linked from advertisements, or products and services provided by advertisers.
+        </p>
+        <p>
+          To the extent permitted by law, the developer is not responsible for any trouble, damage, or disadvantage arising from the user’s viewing, use of, or interaction with advertisements or advertiser services.
+        </p>
+        <p>
+          Please refer to the App’s Privacy Policy for information about the handling of information related to advertising.
+        </p>
+      </section>
+
+      <section>
+        <h2><span>7</span>Prohibited Acts</h2>
         <p>Users must not engage in any of the following acts when using the App:</p>
         <ul>
           <li>Acts that violate laws, regulations, or public order and morals</li>
           <li>Acts that infringe the rights, privacy, or reputation of third parties</li>
-          <li>Unauthorized use, modification, reverse engineering, analysis, or redistribution of the App</li>
-          <li>Acts that interfere with the operation, functions, or availability of the App</li>
-          <li>Acts that place an excessive burden on the App or related systems</li>
+          <li>Entering or saving another person’s personal information or inappropriate images</li>
+          <li>Unauthorized use, modification, analysis, reverse engineering, or redistribution of the App</li>
+          <li>Acts that interfere with the operation, functions, or display of the App</li>
+          <li>Using the App in a way that differs from its intended purpose</li>
+          <li>Improperly interfering with advertisement display, advertisement delivery, or advertisement measurement</li>
           <li>Any other acts deemed inappropriate by the developer</li>
         </ul>
       </section>
 
       <section>
-        <h2><span>6</span>Notifications</h2>
+        <h2><span>8</span>Notifications</h2>
         <p>
           The App may send reminder notifications if the user chooses to enable them.
         </p>
@@ -270,12 +316,12 @@
           Notification settings and notification times can be changed or turned off from the App settings or the device settings.
         </p>
         <p>
-          Notifications may not arrive as scheduled depending on the device status, operating system specifications, notification settings, or other conditions.
+          Notifications may not arrive as scheduled, or may not be delivered, depending on the device status, operating system specifications, notification settings, power-saving settings, network environment, or other conditions.
         </p>
       </section>
 
       <section>
-        <h2><span>7</span>Data Management and Deletion</h2>
+        <h2><span>9</span>Data Management and Deletion</h2>
         <p>
           Users can delete saved record data from the settings screen in the App.
         </p>
@@ -283,35 +329,51 @@
           If the App is deleted from the device, data stored within the App may also be deleted.
         </p>
         <p>
-          Saved data may be lost due to device failure, loss of device, operating system issues, deletion of the App, or other circumstances.
+          Saved data may be lost due to device failure, device loss, device replacement, operating system issues, deletion of the App, updates, or other unexpected circumstances.
+        </p>
+        <p>
+          Users are responsible for managing their own record data as necessary.
         </p>
       </section>
 
       <section>
-        <h2><span>8</span>Intellectual Property Rights</h2>
+        <h2><span>10</span>Intellectual Property Rights</h2>
         <p>
-          Rights to the design, text, images, programs, and other content included in the App belong to the developer or the rightful owners.
+          Rights to the design, text, images, programs, icons, and other content included in the App belong to the developer or the rightful owners.
         </p>
         <p>
-          Users may not reproduce, reprint, modify, distribute, or otherwise use the contents of the App without permission from the rights holder, except as permitted by law.
-        </p>
-      </section>
-
-      <section>
-        <h2><span>9</span>Disclaimer</h2>
-        <p>
-          The developer does not guarantee the content, functions, operation, accuracy, usefulness, suitability for a particular purpose, or continuous availability of the App, whether express or implied.
-        </p>
-        <p>
-          The developer shall not be liable for any damage or disadvantage arising from the use of the App, inability to use the App, loss of record data, failure of notifications, device environment issues, or other problems.
-        </p>
-        <p>
-          However, this shall not apply in cases where damage is caused to the user by intentional misconduct or gross negligence by the developer.
+          Users may not reproduce, reprint, modify, distribute, sell, publish, or otherwise use the contents of the App without permission from the rights holder.
         </p>
       </section>
 
       <section>
-        <h2><span>10</span>Changes to These Terms</h2>
+        <h2><span>11</span>Changes or Suspension of the App</h2>
+        <p>
+          The developer may change, add, suspend, or terminate the content, functions, specifications, method of provision, availability of advertisements, or advertisement display method of the App as necessary.
+        </p>
+        <p>
+          To the extent permitted by law, the developer is not responsible for any damage, disadvantage, loss of data, or other issues arising from such changes, suspension, or termination.
+        </p>
+      </section>
+
+      <section>
+        <h2><span>12</span>Disclaimer</h2>
+        <p>
+          The developer does not guarantee the accuracy, completeness, usefulness, safety, continuity, or fitness for a particular purpose of the App’s content, functions, displays, record data, notifications, breathing guide, messages, advertisements, or any other information related to the App.
+        </p>
+        <p>
+          To the extent permitted by law, the developer is not responsible for any damage, disadvantage, trouble, changes in mental or physical condition, worsening symptoms, loss of data, failure of notifications, device malfunction, advertisement-related trouble, disputes with third parties, or other issues arising from the use of, or inability to use, the App.
+        </p>
+        <p>
+          The developer is not responsible for any decisions, actions, whether or not to seek consultation, whether or not to visit a medical institution, or any other conduct taken by users based on the App’s content.
+        </p>
+        <p>
+          However, this does not apply in cases where the user suffers damage due to intentional misconduct or gross negligence by the developer.
+        </p>
+      </section>
+
+      <section>
+        <h2><span>13</span>Changes to These Terms</h2>
         <p>
           The developer may update these Terms of Use as necessary.
         </p>
@@ -321,21 +383,21 @@
       </section>
 
       <section>
-        <h2><span>11</span>Governing Law</h2>
+        <h2><span>14</span>Governing Law</h2>
         <p>
           These Terms of Use shall be governed by and interpreted in accordance with the laws of Japan.
         </p>
       </section>
 
       <section>
-        <h2><span>12</span>Contact</h2>
+        <h2><span>15</span>Contact</h2>
         <p>
-          For inquiries about this app, please contact us at the email address below.<br>
-         <a href="mailto:answersheettomark@gmail.com">answersheettomark@gmail.com</a>
+          For inquiries about this App, please contact us at the email address below.<br>
+          <a href="mailto:answersheettomark@gmail.com">answersheettomark@gmail.com</a>
         </p>
       </section>
 
-      <p class="updated">Last updated: June 11, 2026</p>
+      <p class="updated">Last updated: June 15, 2026</p>
     </article>
 
     <footer>
