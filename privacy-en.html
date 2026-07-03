@@ -6,18 +6,18 @@
   <title>Privacy Policy | Kokoro Omamori</title>
   <style>
     :root {
-      --bg1: #f8efe9;
-      --bg2: #eaf4ef;
-      --bg3: #eef1fb;
-      --card: rgba(255, 255, 255, 0.72);
-      --card-border: rgba(255, 255, 255, 0.85);
+      --bg1: #f6efe5;
+      --bg2: #eaf3e8;
+      --bg3: #f3eadf;
+      --card: rgba(255, 255, 255, 0.74);
+      --card-border: rgba(255, 255, 255, 0.86);
       --text-main: #4f4a45;
       --text-sub: #746f69;
-      --accent: #b98f7a;
-      --accent-soft: #f1ddd2;
-      --warning-bg: rgba(255, 247, 238, 0.78);
-      --warning-border: rgba(185, 143, 122, 0.28);
-      --shadow: rgba(116, 96, 86, 0.14);
+      --accent: #7fae9b;
+      --accent-soft: #e5f1ea;
+      --warning-bg: rgba(245, 238, 226, 0.78);
+      --warning-border: rgba(127, 174, 155, 0.28);
+      --shadow: rgba(88, 112, 96, 0.14);
     }
 
     * {
@@ -31,8 +31,8 @@
       color: var(--text-main);
       line-height: 1.8;
       background:
-        radial-gradient(circle at 15% 10%, rgba(255, 255, 255, 0.9), transparent 28%),
-        radial-gradient(circle at 85% 18%, rgba(255, 255, 255, 0.65), transparent 26%),
+        radial-gradient(circle at 18% 12%, rgba(229, 241, 234, 0.9), transparent 34%),
+        radial-gradient(circle at 82% 20%, rgba(243, 234, 223, 0.95), transparent 36%),
         linear-gradient(135deg, var(--bg1), var(--bg2) 55%, var(--bg3));
       padding: 32px 16px;
     }
@@ -47,19 +47,13 @@
       padding: 28px 18px 22px;
     }
 
-    .app-icon {
-      width: 72px;
-      height: 72px;
-      margin: 0 auto 14px;
-      border-radius: 24px;
-      display: grid;
-      place-items: center;
-      background: rgba(255, 255, 255, 0.58);
-      border: 1px solid var(--card-border);
-      box-shadow: 0 14px 34px var(--shadow);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      font-size: 34px;
+    .title-line {
+      width: 128px;
+      height: 8px;
+      margin: 14px auto 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0.48;
     }
 
     h1 {
@@ -93,7 +87,7 @@
 
     section {
       padding: 18px 0;
-      border-top: 1px solid rgba(185, 143, 122, 0.18);
+      border-top: 1px solid rgba(127, 174, 155, 0.18);
     }
 
     section:first-of-type {
@@ -201,9 +195,9 @@
 <body>
   <main class="page">
     <header class="hero">
-      <div class="app-icon">🫧</div>
       <h1>Privacy Policy</h1>
       <p class="subtitle">Kokoro Omamori</p>
+      <div class="title-line"></div>
     </header>
 
     <article class="card">
