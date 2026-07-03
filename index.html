@@ -5,12 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>こころのお守り｜サポート</title>
   <style>
+    :root {
+      --bg1: #f6efe5;
+      --bg2: #eaf3e8;
+      --bg3: #f3eadf;
+      --card: rgba(255, 255, 255, 0.74);
+      --card-border: rgba(255, 255, 255, 0.86);
+      --text-main: #4f4a45;
+      --text-sub: #746f69;
+      --accent: #7fae9b;
+      --accent-soft: #e5f1ea;
+      --shadow: rgba(88, 112, 96, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      background: #f8efe9;
-      color: #4f4a45;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(229, 241, 234, 0.9), transparent 34%),
+        radial-gradient(circle at 82% 20%, rgba(243, 234, 223, 0.95), transparent 36%),
+        linear-gradient(135deg, var(--bg1), var(--bg2) 52%, var(--bg3));
+      color: var(--text-main);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -20,50 +40,75 @@
     main {
       width: 100%;
       max-width: 520px;
-      background: rgba(255, 255, 255, 0.78);
-      border-radius: 24px;
-      padding: 32px;
-      box-shadow: 0 16px 36px rgba(116, 96, 86, 0.14);
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 34px 28px;
+      box-shadow: 0 18px 40px var(--shadow);
       text-align: center;
+      backdrop-filter: blur(14px);
     }
 
     h1 {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       font-size: 28px;
+      letter-spacing: 0.04em;
+      color: var(--text-main);
+    }
+
+    .leaf-line {
+      width: 118px;
+      height: 8px;
+      margin: 0 auto 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0.48;
     }
 
     p {
-      margin: 0 0 24px;
-      color: #746f69;
+      margin: 0 0 22px;
+      color: var(--text-sub);
       line-height: 1.7;
+      font-weight: 500;
     }
 
     a {
       display: block;
       padding: 16px;
       margin-top: 12px;
-      border-radius: 16px;
-      background: #ffffff;
-      color: #4f4a45;
+      border-radius: 18px;
+      background: rgba(229, 241, 234, 0.62);
+      color: var(--text-main);
       text-decoration: none;
       font-weight: 700;
-      border: 1px solid rgba(116, 96, 86, 0.12);
+      border: 1px solid rgba(127, 174, 155, 0.20);
+      box-shadow: 0 8px 18px rgba(88, 112, 96, 0.08);
+      transition: transform 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
     }
 
     a:hover {
-      background: #f1ddd2;
+      background: var(--accent-soft);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 22px rgba(88, 112, 96, 0.12);
     }
 
     .en {
-      margin-top: 24px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(116, 96, 86, 0.16);
+      margin-top: 26px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(127, 174, 155, 0.22);
+    }
+
+    .en p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: var(--text-sub);
     }
   </style>
 </head>
 <body>
   <main>
     <h1>こころのお守り</h1>
+    <div class="leaf-line"></div>
     <p>サポートページ</p>
 
     <a href="./privacy.html">プライバシーポリシー</a>
